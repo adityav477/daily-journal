@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") -%>
+
+    <h1>
+        Home
+    </h1>
+
+    <p>
+        <%= text %>
+    </p>
+
+
+    <% contents.forEach(function(element) { %>
+        <h1> <%= element.title %></h1>
+        <p> <%= element.content %></p>
+        <% }) %>
+
+
+    <%- include("partials/footer.ejs") -%>
